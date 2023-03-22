@@ -16,4 +16,4 @@ Fonctionnalités* :
 - Procéder à des conversion aire, masse, pression et etc.
 - Changer les unités de mesure des angles (radian/degré)
 
-*Il s'agit d'une liste exhaustive des fonctionnalité.
+*Il s'agit d'une liste exhaustive des fonctionnalitées disponibles.

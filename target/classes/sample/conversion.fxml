@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerConversion">
+    <BorderPane id="borderPane" prefHeight="200.0" prefWidth="600.0">
+
+        <!-- Déclaration des menus -->
+        <top>
+            <MenuBar prefWidth="146.0" BorderPane.alignment="CENTER">
+                <Menu text="Mode">
+                    <MenuItem mnemonicParsing="false" onAction="#standard" text="Standard" />
+                    <MenuItem mnemonicParsing="false" onAction="#scientifique" text="Scientifique" />
+                    <MenuItem mnemonicParsing="false" onAction="#conversion" text="Conversion" />
+                </Menu>
+            </MenuBar>
+        </top>
+
+        <center>
+            <GridPane prefHeight="239.0" prefWidth="600.0">
+
+                <!-- Déclaration du menu du choix de conversion -->
+                <MenuButton fx:id="menuButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #c3d4cb; -fx-opacity: 0.8; -fx-font-size: 14;" text="Choisir une conversion" GridPane.columnIndex="1">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#listeAireClique" text="Aire" />
+                        <MenuItem mnemonicParsing="false" onAction="#listeAngleClique" text="Angle" />
+                        <MenuItem mnemonicParsing="false" onAction="#listeLongueurClique" text="Longueur" />
+                        <MenuItem mnemonicParsing="false" onAction="#listeMasseClique" text="Masse" />
+                        <MenuItem mnemonicParsing="false" onAction="#listePressionClique" text="Pression" />
+                        <MenuItem mnemonicParsing="false" onAction="#listeDeviseClique" text="Devise" />
+                        <MenuItem mnemonicParsing="false" onAction="#listeTempsClique" text="Temps" />
+                        <MenuItem mnemonicParsing="false" onAction="#listeTemperatureClique" text="Température" />
+                        <MenuItem mnemonicParsing="false" onAction="#listeVitesseClique" text="Vitesse" />
+                        <MenuItem mnemonicParsing="false" onAction="#listeVolumeClique" text="Volume" />
+                        <MenuItem mnemonicParsing="false" onAction="#listeEnergieClique" text="Énergie" />
+                    </items>
+                </MenuButton>
+
+                <!-- Déclaration du menu de la valeur à convertir -->
+                <ChoiceBox fx:id="choiceBoxGauche" prefWidth="150.0" style="-fx-background-color: #c3d4cb; -fx-opacity: 0.8; -fx-font-size: 14; -fx-text-fill: white;" GridPane.rowIndex="1" />
+
+                <!-- Déclaration du menu de la valeur convertit -->
+                <ChoiceBox fx:id="choiceBoxDroite" prefWidth="150.0" style="-fx-background-color: #c3d4cb; -fx-opacity: 0.8; -fx-font-size: 14; -fx-text-fill: white;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+
+                <!-- Déclaration des Textfields -->
+                <TextField fx:id="textFieldGauche" text="0" GridPane.rowIndex="2">
+                    <cursor>
+                        <Cursor fx:constant="TEXT" />
+                    </cursor>
+                </TextField>
+                <TextField fx:id="textFieldDroit" text="0" style="-fx-background-color: white; -fx-opacity: 1;" disable="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <cursor>
+                        <Cursor fx:constant="TEXT" />
+                    </cursor>
+                </TextField>
+
+                <!-- Déclaration des marges -->
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="150.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.0" minWidth="10.0" prefWidth="300.0" />
+                    <ColumnConstraints />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="333.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="306.0" minHeight="0.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+
+            </GridPane>
+        </center>
+
+    </BorderPane>
+
+    <!-- Déclaration du bouton de conversion -->
+    <Button fx:id="conversionButton" layoutX="245.0" layoutY="250.0" mnemonicParsing="false" onAction="#conversionClique" style="-fx-background-color: #f5ad11; -fx-text-fill: white; -fx-opacity: 0.8;" text="Conversion">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Button>
+
+</AnchorPane>

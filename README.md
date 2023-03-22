@@ -11,8 +11,8 @@ Il existe 3 modes:
 Fonctionnalités* : 
 
 - Enregistrer ses résultats et des réutiliser.
-- Utiliser toute sorte de combinaison différente avec ou sans parenthèse.
-- Gérer les double négation, les cosinus, sinus, modulo et etc.
+- Utiliser toutes sortes de combinaisons différentes avec ou sans parenthèse.
+- Gérer les doubles négations, les cosinus, les sinus, les modulo et etc.
 - Procéder à des conversion aire, masse, pression et etc.
 - Changer les unités de mesure des angles (radian/degré)
 
